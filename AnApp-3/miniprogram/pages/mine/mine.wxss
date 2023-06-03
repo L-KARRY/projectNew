@@ -1,0 +1,125 @@
+/* pages/mine/mine.wxss */
+page {
+    background-color: rgb(255, 255, 255);
+}
+
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #aaa;
+    margin-top: -100rpx;
+}
+
+.userinfo-avatar {
+    overflow: hidden;
+    width: 156rpx;
+    height: 156rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+    margin-top: 200rpx;
+}
+
+.usermotto {
+    margin-top: 200px;
+}
+
+/* 昵称 */
+.userinfo-nickname {
+    color: black;
+    font-size: 18px;
+}
+
+/* 总选项 */
+.choice {
+    width: 100%;
+    margin-top: 100rpx;
+}
+
+/* 小选项 */
+.schedule {
+    width: 100rpx;
+    height: 100rpx;
+    font-size: 22px;
+    /* border: rgb(102, 99, 99) solid 1px; */
+    /* border-bottom: rgb(102, 99, 99) solid 1px; */
+    padding-top: 30rpx;
+    padding-left: 50rpx;
+    letter-spacing: 50rpx;
+    /* margin-left: -60rpx; */
+    margin-top: -20rpx;
+    margin-left: 10%;
+}
+
+.gps {
+    width: 100rpx;
+    height: 100rpx;
+    font-size: 22px;
+    /* border: rgb(102, 99, 99) solid 1px; */
+    /* border-bottom: rgb(102, 99, 99) solid 1px; */
+    padding-top: 30rpx;
+    padding-left: 50rpx;
+    letter-spacing: 50rpx;
+    margin-top: -135rpx;
+    margin-left: 37%;
+    float: left;
+}
+
+.diary {
+    width: 100rpx;
+    height: 100rpx;
+    font-size: 22px;
+    /* border: rgb(102, 99, 99) solid 1px */
+    /* border-bottom: rgb(102, 99, 99) solid 1px; */
+    padding-top: 30rpx;
+    padding-left: 50rpx;
+    letter-spacing: 50rpx;
+    margin-top: -135rpx;
+    margin-left: 65%;
+    float: left;
+}
+
+/* .books {
+    width: 100rpx;
+    height: 100rpx;
+    font-size: 22px; */
+    /* border: rgb(102, 99, 99) solid 1px; */
+    /* border-bottom: rgb(102, 99, 99) solid 1px; */
+    /* padding-top: 30rpx;
+    padding-left: 50rpx;
+    letter-spacing: 50rpx;
+    margin-top: -135rpx;
+    margin-left: 540rpx;
+    float: left;
+} */
+
+/* 箭头 */
+.choice text {
+    float: right;
+    margin-right: 120rpx;
+    color: rgb(133, 131, 128);
+}
+
+/* 下标 */
+.scheduleText {
+    margin-left: 10rpx;
+    color: rgb(73, 68, 68);
+}
+.gpsText{
+    float: left;
+    margin-top: -43rpx;
+    margin-left: 220rpx;
+    color: rgb(73, 68, 68);
+}
+.diaryText{
+    float: left;
+    margin-top: -40rpx;
+    margin-left: 430rpx;
+    color: rgb(73, 68, 68);
+}
+/* .booksText{
+    float: left;
+    margin-top: -40rpx;
+    margin-left: 520rpx;
+    color: rgb(73, 68, 68);
+} */
