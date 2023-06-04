@@ -1,0 +1,49 @@
+{
+    "pages": [
+        "pages/first/first",
+        "pages/classify/classify",
+        "pages/mine/mine",
+        "pages/diary/diary",
+        "pages/books/books",
+        "pages/maps/maps"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#FF9999",
+        "navigationBarTitleText": "账本",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "backgroundColor": "#FF9999",
+        "list": [
+            {
+                "pagePath": "pages/first/first",
+                "iconPath": "pages/images/tarbar/日历.png",
+                "selectedIconPath": "pages/images/tarbar/猪猪.png"
+            },
+            {
+                "pagePath": "pages/classify/classify",
+                "iconPath": "pages/images/tarbar/资讯.png",
+                "selectedIconPath": "pages/images/tarbar/猪猪.png"
+            },
+            {
+                "pagePath": "pages/books/books",
+                "iconPath": "pages/images/tarbar/我的钱包.png",
+                "selectedIconPath": "pages/images/tarbar/猪猪.png"
+            },
+            {
+                "pagePath": "pages/mine/mine",
+                "iconPath": "pages/images/tarbar/收藏文件.png",
+                "selectedIconPath": "pages/images/tarbar/猪猪.png"
+            }
+        ]
+    },
+    "plugins": {
+        "calendar": {
+            "version": "1.1.3",
+            "provider": "wx92c68dae5a8bb046"
+        }
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2"
+}

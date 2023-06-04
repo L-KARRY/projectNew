@@ -1,0 +1,56 @@
+<!--pages/mine/mine.wxml-->
+<view class="container">
+    <!-- 获取头像和昵称 -->
+    <view class="userinfo">
+        <block wx:if="{{!hasUserInfo}}">
+            <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile" style="background-color: rgb(236, 192, 229);width: 300rpx;height: 100rpx;margin-top: 300rpx;text-align: center;opacity: 0.8;"> 获取头像昵称 </button>
+            <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+        </block>
+        <block wx:else>
+            <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </block>
+    </view>
+
+    <!-- 选项 -->
+    <view class="choice">
+        <view>
+            <navigator url="/pages/classify/classify" open-type="switchTab">
+                <image src="https://img0.baidu.com/it/u=92441713,2538727496&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" class="schedule"></image>
+            </navigator>
+        </view>
+
+        <view>
+            <navigator url="/pages/maps/maps" open-type="navigate">
+                <image src="https://img1.baidu.com/it/u=874447137,1655042583&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" class="gps"></image>
+            </navigator>
+        </view>
+
+        <view>
+            <navigator url="/pages/diary/diary" open-type="navigate">
+                <image src="http://mms2.baidu.com/it/u=1799304759,348366736&fm=253&app=120&f=JPEG&fmt=auto&q=75?w=500&h=500" class="diary"></image>
+            </navigator>
+        </view>
+
+        <!-- <view>
+            <navigator url="/pages/books/books" open-type="navigate">
+                <image src="http://mms0.baidu.com/it/u=531485965,2529891605&fm=253&app=120&f=JPEG&fmt=auto&q=75?w=800&h=800" class="books"></image>
+            </navigator>
+        </view> -->
+    </view>
+
+    <view>
+        <view>
+            <text class="scheduleText">消费记录</text>
+        </view>
+        <view>
+            <text class="gpsText">地图定位</text>
+        </view>
+        <view>
+            <text class="diaryText">浅记一下</text>
+        </view>
+        <!-- <view>
+            <text class="booksText">开销一记</text>
+        </view> -->
+    </view>
+</view>

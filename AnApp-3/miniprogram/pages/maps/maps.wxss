@@ -1,0 +1,9 @@
+/* pages/maps/maps.wxss */
+.getgps{
+    float: left;
+    margin-top: 10px;
+}
+.setgps{
+    float: right;
+    margin-top: 10px;
+}
