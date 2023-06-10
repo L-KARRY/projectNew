@@ -1,1 +1,0 @@
-"D:\Study\Web\WeXin\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-5gt01yqd10fa5242 --n quickstartFunctions --r --project "D:\Study\Web\WeXin\微信web开发者工具\code\AnApp-3" --report_first --report
